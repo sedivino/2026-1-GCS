@@ -1,0 +1,6 @@
+{
+  "app_name": "Todo CLI",
+  "version": "1.0.0",
+  "data_file": "config/tasks.json",
+  "max_tasks": 100
+}

@@ -1,119 +1,22 @@
-# INF0465 — Gerência de Configuração de Software
+# Todo CLI
 
-> **Universidade Federal de Goiás — Instituto de Informática**  
-> Curso: Engenharia de Software | Turma A | 2026 - 1º Semestre  
-> Professora: Sofia Larissa da Costa Paiva
+Gerenciador de tarefas simples via linha de comando.
 
----
+## Como usar
 
-## 📋 Sobre a Disciplina
+```bash
+# Adicionar tarefa
+python src/main.py add "Estudar Gerência de Configuração"
 
-Este repositório é utilizado na disciplina de **Gerência de Configuração de Software (GCS)**, cujo objetivo é fazer com que os discentes compreendam e utilizem os conceitos e processos de GCS, incluindo identificação, controle de versões, controle de mudanças, auditorias e boas práticas com ferramentas modernas.
+# Listar tarefas
+python src/main.py list
 
-| Item | Detalhe |
-|------|---------|
-| Código | INF0465 |
-| Carga Horária Teórica | 32h |
-| Carga Horária Prática | 32h |
-| Total | 64h |
+# Marcar como concluída
+python src/main.py done 1
 
----
-
-## 🗂️ Estrutura do Repositório
-
-```
-.
-├── docs/                  # Documentos do plano de gerência de configuração
-│   ├── PGC-parte1/        # Entrega da primeira parte do PGC
-│   └── PGC-final/         # Versão final do PGC
-├── atividades/            # Atividades supervisionadas e estudos de caso
-├── seminarios/            # Materiais das apresentações
-└── README.md
+# Remover tarefa
+python src/main.py remove 1
 ```
 
----
-
-## 📅 Cronograma
-
-| Data | Tópico |
-|------|--------|
-| 05/03/26 | Apresentação da disciplina. Introdução à GCS. |
-| 12/03/26 | Identificação e armazenamento de configuração: repositórios e controle de acesso. |
-| 26/03/26 | Controle de Mudanças em Itens de Configuração. |
-| 09/04/26 | Controle de Construção (*build*). |
-| **23/04/26** | **✏️ Avaliação Teórica Individual (ATI)** |
-| 30/04/26 | GCS no ciclo de vida do software: normas IEEE 828-2012 e MPS.BR. |
-| 14/05/26 | GCS em metodologias ágeis e adequada ao tipo de software. |
-| **28/05/26** | **📄 Apresentação do PGC — Parte 1** |
-| 11/06/26 | Estudo de caso. Finalização do PGC. |
-| **18/06/26** | **📄 Apresentação do PGC — Versão Final** |
-
----
-
-## 📝 Programa
-
-1. Fundamentos da Gerência de Configuração
-2. Atividades da Gerência de Configuração
-3. Gerência de Mudanças
-4. Controle de Versão e Auditoria da Configuração
-5. GCS no contexto do MPS.BR e da IEEE 828
-6. GCS em métodos ágeis, *builds* frequentes e desenvolvimento iterativo
-7. GCS para diferentes tipos de produtos (multiplataforma, múltiplas variantes, críticos, etc.)
-8. Melhoria de Gerência de Configuração
-9. Plano de Gerência de Configuração de Software
-10. Ferramentas práticas de GCS
-
----
-
-## 🏆 Critérios de Avaliação
-
-A nota final (NF) é calculada pela fórmula:
-
-```
-NF = (ATI × 3) + (PGC1 × 3) + (PGC2 × 4)
-```
-
-| Sigla | Descrição | Peso | Valor |
-|-------|-----------|------|-------|
-| ATI | Avaliação Teórica Individual | 3 | 0 – 10 |
-| PGC1 | Plano de GC — Parte 1 (grupo) | 3 | 0 – 10 |
-| PGC2 | Plano de GC — Versão Final (grupo) | 4 | 0 – 10 |
-
-> ✅ Aprovado: NF ≥ 6,0 **e** frequência ≥ 75%
-
----
-
-## 📌 Regras Importantes
-
-- Atividades não entregues na data recebem nota **0,0**
-- Plágio resulta em nota **0,0** e pode ser levado à Coordenação do Curso
-- Segunda chamada deve ser solicitada em até **7 dias** após a avaliação
-- Comunicações com a professora devem usar o e-mail institucional `@discente.ufg.br`
-
----
-
-## 📚 Bibliografia
-
-**Básica**
-- HASS, Anne Mette Jonassen. *Configuration Management Principles and Practice*. Pearson Education, 2003.
-- IEEE 828-2012 — *IEEE Standard for Configuration Management in Systems and Software Engineering*.
-
-**Complementar**
-- SWEBOK V.4, Chapter 8 — *Software Configuration Management*. IEEE Computer Society, 2023. Disponível em [swebok.org](http://swebok.org).
-- BERCZUK, Stephen P. et al. *Software Configuration Management Patterns*. Addison-Wesley, 2003.
-- MARAYA, Vincent. *The Build Master: Microsoft's Software Configuration Management Best Practices*. Addison-Wesley, 2005.
-
----
-
-## 👩‍🏫 Atendimento Docente
-
-| Modalidade | Dia | Horário | Local |
-|------------|-----|---------|-------|
-| Presencial | Segundas-feiras | 18:00 – 18:45 | Sala 114 — INF/UFG |
-| Remoto | Terças-feiras | 18:15 – 19:00 | [Google Meet](https://meet.google.com/hjs-ahju-ttz) |
-
-> ⚠️ Agendamento necessário.
-
----
-
-*Resultados das avaliações divulgados no SIGAA e portal específico.*
+## Estrutura
+Veja `docs/arquitetura.md` para detalhes técnicos.
